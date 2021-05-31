@@ -1,0 +1,16 @@
+{
+  "projectId": "tjmb2y",
+  "baseUrl": "https://www.deepl.com/",
+  "defaultCommandTimeout": 10000,
+  "retries": {
+   "runMode": 2,
+   "openMode": 0
+  },
+  "scrollBehavior": "bottom",
+  "testFiles": "**/*.{feature,features,js}",
+  "viewportHeight": 1000,
+  "viewportWidth": 1000,
+  "screenshotsFolder": "target/screenshots",
+  "videosFolder": "target/videos",
+  "downloadsFolder": "target/downloads"
+}
