@@ -1,0 +1,19 @@
+{
+    "petData": [
+        {
+            "petName": "Pogo",
+            "petCategoryName": "dog",
+            "petStatus": "available"
+        },
+        {
+            "petName": "Saphyre",
+            "petCategoryName": "dog",
+            "petStatus": "pending"
+        },
+        {
+            "petName": "Freyja",
+            "petCategoryName": "cat",
+            "petStatus": "sold"
+        }
+    ]
+}

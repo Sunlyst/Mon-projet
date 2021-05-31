@@ -3,14 +3,28 @@
   "baseUrl": "https://www.deepl.com/",
   "defaultCommandTimeout": 10000,
   "retries": {
-   "runMode": 2,
-   "openMode": 0
+    "runMode": 2,
+    "openMode": 0
   },
+  "responseTimeout": 30000,
+  "requestTimeout": 30000,
   "scrollBehavior": "bottom",
-  "testFiles": "**/*.{feature,features,js}",
+  "testFiles": ["**/*.feature","**/*.js"],
   "viewportHeight": 1000,
   "viewportWidth": 1000,
   "screenshotsFolder": "target/screenshots",
   "videosFolder": "target/videos",
-  "downloadsFolder": "target/downloads"
+  "downloadsFolder": "target/downloads",
+  "env": {
+    "allure": true,
+    "TAGS":""
+  },
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "target/reports/mochawesome-report",
+    "overwrite": true,
+    "html": true,
+    "json": true,
+    "timestamp": "dd/mm/yyyy_HH-MM-ss"
+  }
 }

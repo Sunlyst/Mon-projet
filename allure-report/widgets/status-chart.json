@@ -1,0 +1,21 @@
+[ {
+  "uid" : "101e22a5ab715ac1",
+  "name" : "Access the translate page",
+  "time" : {
+    "start" : 1622465511833,
+    "stop" : 1622465513883,
+    "duration" : 2050
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "2e5ef2a429d38a12",
+  "name" : "Tests tooltip display on glossary button hovering",
+  "time" : {
+    "start" : 1622465513907,
+    "stop" : 1622465514481,
+    "duration" : 574
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

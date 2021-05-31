@@ -1,0 +1,130 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 1,
+    "pending": 0,
+    "failures": 1,
+    "start": "2021-05-31T13:58:57.010Z",
+    "end": "2021-05-31T13:59:37.274Z",
+    "duration": 40264,
+    "testsRegistered": 2,
+    "passPercent": 50,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "e9b01032-82ee-4f20-bb38-8b3376a1220b",
+      "title": "",
+      "fullFile": "cypress/integration/Mon_projet/cucumberFeatures/translation.feature",
+      "file": "cypress/integration/Mon_projet/cucumberFeatures/translation.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3c50c7ae-55d5-4e01-9de6-5a9b731f8795",
+          "title": "Translate Feature",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "translation (example #1)",
+              "fullTitle": "Translate Feature translation (example #1)",
+              "timedOut": null,
+              "duration": 4877,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "e6edb1ad-fe7c-43d6-80d1-254e770cf7ed",
+              "parentUUID": "3c50c7ae-55d5-4e01-9de6-5a9b731f8795",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Translation 2.3 (example #1)",
+              "fullTitle": "Translate Feature Translation 2.3 (example #1)",
+              "timedOut": null,
+              "duration": 11966,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<div#target-dummydiv.lmt__textarea.lmt__textarea_dummydiv>' to contain text 'Danke', but the text was 'Thanks\\r\\n'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<div#target-dummydiv.lmt__textarea.lmt__textarea_dummydiv>' to contain text 'Danke', but the text was 'Thanks\\r\\n'\n    at Context.eval (https://www.deepl.com/__cypress/tests?p=cypress\\integration\\Mon_projet\\cucumberFeatures\\translation.feature:27:34)\n    at Context.resolveAndRunStepDefinition (https://www.deepl.com/__cypress/tests?p=cypress\\integration\\Mon_projet\\cucumberFeatures\\translation.feature:10499:9)\n    at Context.eval (https://www.deepl.com/__cypress/tests?p=cypress\\integration\\Mon_projet\\cucumberFeatures\\translation.feature:9828:35)",
+                "diff": "- 'Thanks\\r\\n'\n+ 'Danke'\n"
+              },
+              "uuid": "608428b3-ba36-45f8-8719-b0006c93f079",
+              "parentUUID": "3c50c7ae-55d5-4e01-9de6-5a9b731f8795",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "e6edb1ad-fe7c-43d6-80d1-254e770cf7ed"
+          ],
+          "failures": [
+            "608428b3-ba36-45f8-8719-b0006c93f079"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 16843,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "target/reports/mochawesome-report",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "timestamp": "dd/mm/yyyy_HH-MM-ss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -4,7 +4,13 @@
   "description": "Mon projet d'autoformation sur Cypress.io",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "my:command": "echo Ma première commande fonctionne && cypress run --spec 'cypress/integration/Mon_projet/javascriptFeatures/navigation.spec.js'",
+    "cypress:open": "cypress open",
+    "cypress:firstTests": "npm run allure:clear && cypress run --spec 'cypress/integration/Mon_projet/javascriptFeatures/firstTests.spec.js' && npm run allure:open",
+    "cypress:firstTests:record": "npm run allure:clear && cypress run --spec 'cypress/integration/Mon_projet/javascriptFeatures/firstTests.spec.js' --record --key 2972668b-99ba-4407-a9b6-4394883fc4ec && npm run allure:open",
+    "allure:clear": "if exist allure-results rmdir /q /s allure-results && if exist allure-report rmdir /q /s allure-report && if exist cypress\\screenshots rmdir /q /s cypress\\screenshots && if exist cypress\\videos rmdir /q /s cypress\\videos",
+    "allure:open": "allure generate allure-results --clean -o allure-report && allure serve",
+    "cy:tag": "cypress-tags run"
   },
   "repository": {
     "type": "git",
@@ -17,11 +23,27 @@
   },
   "homepage": "https://github.com/Sunlyst/Mon-projet#readme",
   "devDependencies": {
+    "@shelex/cypress-allure-plugin": "^2.5.1",
+    "allure-commandline": "^2.13.8",
     "cypress": "^7.4.0",
-    "cypress-cucumber-preprocessor": "^4.1.1"
+    "cypress-cucumber-preprocessor": "^4.1.1",
+    "cypress-tags": "^0.1.0",
+    "cypress-xpath": "^1.6.2",
+    "mailslurp": "0.0.1-security",
+    "mailslurp-client": "^12.0.0",
+    "mocha": "^8.4.0",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0",
+    "typescript": "^4.3.2"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": false,
-    "stepDefinitions" : "cypress/cucumber/stepDefinitions"
-  }  
+    "stepDefinitions": "cypress/cucumber/stepDefinitions"
+  },
+  "dependencies": {
+    "cypress-real-events": "^1.5.0",
+    "mailslurp": "0.0.1-security",
+    "mailslurp-client": "^11.3.0"
+  }
 }

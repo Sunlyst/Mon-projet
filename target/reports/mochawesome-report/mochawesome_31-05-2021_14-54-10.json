@@ -1,0 +1,125 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-05-31T12:54:08.498Z",
+    "end": "2021-05-31T12:54:10.887Z",
+    "duration": 2389,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "3c4460e1-fc53-4213-b27e-ca7946a9ed3a",
+      "title": "",
+      "fullFile": "cypress/integration/Mon_projet/javascriptFeatures/firstTests.spec.js",
+      "file": "cypress/integration/Mon_projet/javascriptFeatures/firstTests.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c67fd3c8-199d-4f0e-ad6b-057ad82aec7c",
+          "title": "Front end testing",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Access the translate page",
+              "fullTitle": "Front end testing Access the translate page",
+              "timedOut": null,
+              "duration": 1768,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.log('This is within my created test');\ncy.get('.dl_translator_page_container').should('be.visible');\ncy.get('.lmt__source_textarea').should(function (translateInput) {\n  expect(translateInput[0]).to.have.property('autocomplete', 'off');\n});\ncy.url().should('contain', \"deepl.com\");",
+              "err": {},
+              "uuid": "2ff45903-5818-4a37-82c9-fc9b5626426e",
+              "parentUUID": "c67fd3c8-199d-4f0e-ad6b-057ad82aec7c",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Tests tooltip display on glossary button hovering",
+              "fullTitle": "Front end testing Tests tooltip display on glossary button hovering",
+              "timedOut": null,
+              "duration": 557,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('[dl-test=\"glossary-button\"]').realHover();",
+              "err": {},
+              "uuid": "be38040b-adc0-4308-a62e-06d73948745c",
+              "parentUUID": "c67fd3c8-199d-4f0e-ad6b-057ad82aec7c",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "2ff45903-5818-4a37-82c9-fc9b5626426e",
+            "be38040b-adc0-4308-a62e-06d73948745c"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2325,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "target/reports/mochawesome-report",
+        "overwrite": true,
+        "html": true,
+        "json": true,
+        "timestamp": "dd/mm/yyyy_HH-MM-ss"
+      },
+      "version": "5.2.0"
+    }
+  }
+}

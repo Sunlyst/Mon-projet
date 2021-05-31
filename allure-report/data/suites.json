@@ -1,0 +1,35 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Front end testing",
+    "children" : [ {
+      "name" : "Access the translate page",
+      "uid" : "101e22a5ab715ac1",
+      "parentUid" : "f12cb9db4ca82748278668e38d9b208f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622465511833,
+        "stop" : 1622465513883,
+        "duration" : 2050
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    }, {
+      "name" : "Tests tooltip display on glossary button hovering",
+      "uid" : "2e5ef2a429d38a12",
+      "parentUid" : "f12cb9db4ca82748278668e38d9b208f",
+      "status" : "passed",
+      "time" : {
+        "start" : 1622465513907,
+        "stop" : 1622465514481,
+        "duration" : 574
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "f12cb9db4ca82748278668e38d9b208f"
+  } ]
+}

@@ -1,0 +1,31 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "Access the translate page",
+    "uid" : "101e22a5ab715ac1",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1622465511833,
+      "stop" : 1622465513883,
+      "duration" : 2050
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  }, {
+    "name" : "Tests tooltip display on glossary button hovering",
+    "uid" : "2e5ef2a429d38a12",
+    "parentUid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+    "status" : "passed",
+    "time" : {
+      "start" : 1622465513907,
+      "stop" : 1622465514481,
+      "duration" : 574
+    },
+    "flaky" : false,
+    "newFailed" : false,
+    "parameters" : [ ]
+  } ]
+}
